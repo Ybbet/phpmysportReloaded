@@ -111,17 +111,17 @@ if(isset($_SESSION['table']) AND $_SESSION['table']==1 AND (!isset($_SESSION['cr
    {
     $ligne=fgets ($fd, 4096);
     $req_creation_table.=$ligne;
-	if(eregi("CREATE TABLE",$ligne) OR eregi("INSERT INTO",$ligne)) { 
+	if(preg_match("/CREATE TABLE/i",$ligne) OR preg_match("/INSERT INTO/i",$ligne)) { 
 		$var['name_table']=explode("`",$ligne); 
 		$var['name_table']=$var['name_table']['1'];
 	}
  
-    if(eregi(";",$ligne))
+    if(preg_match("/;/i",$ligne))
     {
-      $req_creation_table=eregi_replace(";","",$req_creation_table);
+      $req_creation_table=preg_replace ("/;/i","",$req_creation_table);
 	  # we add the prefix if needed
 	  if($_SESSION['prefix']!='') {
-		  $req_creation_table=eregi_replace("`".$var['name_table']."`","`".$_SESSION['prefix'].$var['name_table']."`",$req_creation_table);
+		  $req_creation_table=preg_replace ("/`".$var['name_table']."`/i","`".$_SESSION['prefix'].$var['name_table']."`",$req_creation_table);
 		  $var['name_table']=$_SESSION['prefix'].$var['name_table'];
 	  }
       if(mysql_query($req_creation_table)) { $var['nb_table_ok']++; }
@@ -240,7 +240,7 @@ if(isset($_SESSION['creation_conf']) AND $_SESSION['creation_conf']==1 AND (!iss
 	if($_SESSION['prefix']!='') {
 		$var['name_table']=explode("`",$req_insertion_data[$i]); 
 		$var['name_table']=$var['name_table']['1'];
-		$req_insertion_data[$i]=eregi_replace("`".$var['name_table']."`","`".$_SESSION['prefix'].$var['name_table']."`",$req_insertion_data[$i]);		
+		$req_insertion_data[$i]=preg_replace ("/`".$var['name_table']."`/i","`".$_SESSION['prefix'].$var['name_table']."`",$req_insertion_data[$i]);		
 	}
  	
 	if(mysql_query($req_insertion_data[$i],$db)) { $nb_req_ok++; }

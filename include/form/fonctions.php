@@ -34,19 +34,19 @@ function format_txt($txt)
 # check if a text does not have numbers
 function check_text($text)
 {
- return !eregi("[0-9]",$text);
+ return !preg_match("/[0-9]/i",$text);
 }
 
 # check if a number has no text
 function check_integer($nb)
 {
- return eregi("^[0-9]",$nb);
+ return preg_match("/^[0-9]/i",$nb);
 }
 
 # check if the syntax of an email is correct
 function check_email($email)
 {
- return eregi("^[_\.0-9a-z-]+@([0-9a-z-]+\.)+[a-z]{2,4}$",$email);
+ return preg_match("/^[_\.0-9a-z-]+@([0-9a-z-]+\.)+[a-z]{2,4}$/i",$email);
 /*
   list($user, $domaine) = split("@", $email, 2);
   $domain_ok = @checkdnsrr($domaine, "MX");
@@ -56,9 +56,9 @@ function check_email($email)
 # check if a date is in a correct format jj-mm-aaaa or jj/mm/aaaa or jj.mm.aaaa or aaaa/mm/jj */
 function check_date($date)
 {
- if(eregi("([0-9]{4})([\/ .-]{1})([0-9]{1,2})([\/ .-]{1})([0-9]{1,2})", $date))
+ if(preg_match("/([0-9]{4})([\/ .-]{1})([0-9]{1,2})([\/ .-]{1})([0-9]{1,2})/i", $date))
  {
-  $date=eregi_replace("\/|\.| ","-",$date);
+  $date=preg_replace ("/\/|\.| /i","-",$date);
   $date=explode("-",$date);
   $day=$date['2'];
   $month=$date['1'];
@@ -66,9 +66,9 @@ function check_date($date)
 
   return checkdate($month, $day, $year);  
  }
- elseif(eregi("([0-9]{1,2})([\/ .-]{1})([0-9]{1,2})([\/ .-]{1})([0-9]{4})", $date))
+ elseif(preg_match("/([0-9]{1,2})([\/ .-]{1})([0-9]{1,2})([\/ .-]{1})([0-9]{4})/i", $date))
  {
-  $date=eregi_replace("\/|\.| ","-",$date);
+  $date=preg_replace ("/\/|\.| /i","-",$date);
   $date=explode("-",$date);
   $day=$date['0'];
   $month=$date['1'];
@@ -86,7 +86,7 @@ function check_date($date)
 # check if the format of a time is correct hh:mm:ss */
 function check_hour($hour)
 {
- if(eregi("([0-9]{1,2}):([0-9]{0,2})", $hour))
+ if(preg_match("/([0-9]{1,2}):([0-9]{0,2})/i", $hour))
  {
   $tmp=explode(":",$hour);
   $hour=$tmp['0'];
@@ -107,7 +107,7 @@ function check_login($text)
  {
   return false;
  }
- elseif(eregi("[^0-9a-z_\.-@]",$text))
+ elseif(preg_match("/[^0-9a-z_\.-@]/i",$text))
  {
   return false;
  }
@@ -125,7 +125,7 @@ function check_file_name($text)
  {
   return false;
  }
- elseif(eregi("[^0-9a-z_\.-]",$text))
+ elseif(preg_match("/[^0-9a-z_\.-]/i",$text))
  {
   return false;
  }
@@ -138,7 +138,7 @@ function check_file_name($text)
 # check if the syntax of a url is correct
 function check_url($url)
 {
- return eregi("^http://[_A-Z0-9-]+[._A-Z0-9-]+[.A-Z0-9-]*(/~|/?)[/_.A-Z0-9#?&=+-\% ]*$",$url);
+ return preg_match("/^http://[_A-Z0-9-]+[._A-Z0-9-]+[.A-Z0-9-]*(/~|/?)[/_.A-Z0-9#?&=+-\% ]*$/i",$url);
 }
 
 #check if the syntax of a formula is correct

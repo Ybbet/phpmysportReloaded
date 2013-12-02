@@ -28,12 +28,12 @@ if(isset($_POST['season']) AND !empty($_POST['season'])) { $page['value_season']
 
 if(isset($_GET['v2']))
 {
- if(eregi("team",$_GET['v2'])) {
+ if(preg_match("/team/i",$_GET['v2'])) {
   $team=explode("_",$_GET['v2']);
   $page['value_club']=$team['1'];
   $page['value_team']=$team['2'];
  }
- elseif(eregi("club",$_GET['v2'])) {
+ elseif(preg_match("/club/i",$_GET['v2'])) {
   $club=explode("_",$_GET['v2']);
   $page['value_club']=$club['1']; 
  }
@@ -100,7 +100,7 @@ $page['season']=$page['season'];
 
 # TRI
 # $_GET['v1'] is a variable like : page_1_name_asc
-if(isset($_GET['v1']) AND eregi("page",$_GET['v1']))
+if(isset($_GET['v1']) AND preg_match("/page/i",$_GET['v1']))
 {
  $v=explode("_",$_GET['v1']);
  $page_num=$v['1'];

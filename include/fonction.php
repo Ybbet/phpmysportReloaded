@@ -90,13 +90,13 @@ function convert_date_sql($date)
  {
   $return="";
  }
- elseif(eregi("([0-9]{4})([\/ .-]{1})([0-9]{1,2})([\/ .-]{1})([0-9]{1,2})", $date))
+ elseif(preg_match("/([0-9]{4})([\/ .-]{1})([0-9]{1,2})([\/ .-]{1})([0-9]{1,2})/i", $date))
  {
-  $return=eregi_replace("\/|\.| ","-",$date);
+  $return=preg_replace ("/\/|\.| /i","-",$date);
  }
- elseif(eregi("([0-9]{1,2})([\/ .-]{1})([0-9]{1,2})([\/ .-]{1})([0-9]{4})", $date))
+ elseif(preg_match("/([0-9]{1,2})([\/ .-]{1})([0-9]{1,2})([\/ .-]{1})([0-9]{4})/i", $date))
  {
-  $date=eregi_replace("\/|\.| ","-",$date);
+  $date=preg_replace ("/\/|\.| /i","-",$date);
   $date=explode("-",$date);
   $return=$date['2']."-".$date['1']."-".$date['0'];
  }
@@ -225,13 +225,13 @@ function html2txt($text)
 {
  if($text!="")
  {
-  $text=eregi_replace("&nbsp"," ",$text);
+  $text=preg_replace ("/&nbsp/i"," ",$text);
   $text=eregi_replace('"'," ",$text);
-  $text=eregi_replace("'"," ",$text);
-  $text=eregi_replace("&#([a-z0-9]+);"," ",$text);
+  $text=preg_replace ("/'/i"," ",$text);
+  $text=preg_replace ("/&#([a-z0-9]+);/i"," ",$text);
   $text=unhtmlentities($text); // replace html characters by text equivalent
   $text=strip_tags($text); // delete all html & php tags
-  $text=eregi_replace("[[:punct:]]+"," ",$text);
+  $text=preg_replace ("/[[:punct:]]+/i"," ",$text);
   $text=ereg_replace("[[:space:]]+"," ", trim( $text ) );
   $text=strtolower($text);
  }

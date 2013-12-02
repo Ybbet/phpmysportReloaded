@@ -7,12 +7,12 @@ $page['link_retour']="index.php?lg=".LANG."&r=step1";
 
 $page['value_title']=$_SESSION['club_name'];
 $page['value_url']="http://".$_SERVER["HTTP_HOST"].$_SERVER["PHP_SELF"];
-$page['value_url']=eregi_replace("/installation/index.php","",$page['value_url']);
+$page['value_url']=preg_replace ("/\/installation\/index.php/i","",$page['value_url']);
 $page['value_root']="";
 if(isset($_SERVER['DOCUMENT_ROOT'])) {
  $page['value_root']=$_SERVER['DOCUMENT_ROOT'].$_SERVER["PHP_SELF"];
- $page['value_root']=eregi_replace("/installation/index.php","",$page['value_root']);
- $page['value_root']=eregi_replace("program files","PROGRA~1",$page['value_root']);
+ $page['value_root']=preg_replace ("/\/installation\/index.php/i","",$page['value_root']);
+ $page['value_root']=preg_replace ("/program files/i","PROGRA~1",$page['value_root']);
 }
 $page['value_email']="";
 $page['value_host']=$_SERVER['SERVER_NAME'];

@@ -343,8 +343,8 @@ else { $index['contenu']=parse_template(TPL_URL.$page['template'],$page); }
  choix du template principal :
  page normale (par defaut), pop-up ou page pour impression
 */
-if(eregi("fen_pop",$_SERVER['QUERY_STRING'])) $page['fen']="pop";
-if(eregi("fen_impression",$_SERVER['QUERY_STRING'])) $page['fen']="impression";
+if(preg_match("/fen_pop/i",$_SERVER['QUERY_STRING'])) $page['fen']="pop";
+if(preg_match("/fen_impression/i",$_SERVER['QUERY_STRING'])) $page['fen']="impression";
 
 if(isset($page['fen']) AND $page['fen']=="pop")
 {

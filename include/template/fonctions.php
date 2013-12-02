@@ -27,7 +27,7 @@ function parse_template($tpl,$var)
  if(!file_exists($tpl))
  {
  	# we try with defaut folder
-	$tpl_defaut=eregi_replace(TPL_URL,ROOT.'/template/defaut/',$tpl);
+	$tpl_defaut=str_replace(TPL_URL,ROOT.'/template/defaut/',$tpl);
 	if(TPL_DOSSIER!='defaut' AND file_exists($tpl_defaut)) {
 		$tpl=$tpl_defaut;
 	}
@@ -61,10 +61,10 @@ function parse_html($code,$var)
   // remplacement du path des images 
   if(preg_match("`=\"(\.\.\/)*tpl_image/([-_a-zA-Z0-9\/\{\}]+).([a-zA-Z]{2,3})\"`",$code[$i],$catch)) {   
 	  if(TPL_DOSSIER!='defaut' AND file_exists(ROOT."/template/".TPL_DOSSIER."/tpl_image/".$catch[2].".".$catch[3])) {  	
-		$code[$i]=eregi_replace("=\"(\.\.\/)*tpl_image/","=\"".ROOT_URL."/template/".TPL_DOSSIER."/tpl_image/",$code[$i]);
+		$code[$i]=preg_replace ("/=\"(\.\.\/)*tpl_image\//i","=\"".ROOT_URL."/template/".TPL_DOSSIER."/tpl_image/",$code[$i]);
 	  }
 	  else {
-		$code[$i]=eregi_replace("=\"(\.\.\/)*tpl_image/","=\"".ROOT_URL."/template/defaut/tpl_image/",$code[$i]);
+		$code[$i]=preg_replace ("/=\"(\.\.\/)*tpl_image\//i","=\"".ROOT_URL."/template/defaut/tpl_image/",$code[$i]);
 	  }  
   }
 

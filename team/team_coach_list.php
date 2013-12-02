@@ -34,7 +34,7 @@ $page['aff_club']="";
 
 # TRI
 # $_GET['v1'] is a variable like : page_1_name_asc
-if(isset($_GET['v2']) AND eregi("page",$_GET['v2']))
+if(isset($_GET['v2']) AND preg_match("/page/i",$_GET['v2']))
 {
  $v=explode("_",$_GET['v2']);
  $page_num=$v['1'];

@@ -53,7 +53,7 @@ if($right_user['delete_team'] AND  isset($_GET['v2']) AND $_GET['v2']=="delete" 
 
 # TRI
 # $_GET['v1'] is a variable like : page_1_name_asc
-if(isset($_GET['v1']) AND eregi("page",$_GET['v1']))
+if(isset($_GET['v1']) AND preg_match("/page/i",$_GET['v1']))
 {
  $v=explode("_",$_GET['v1']);
  $page_num=$v['1'];

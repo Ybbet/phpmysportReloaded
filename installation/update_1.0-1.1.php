@@ -25,9 +25,9 @@ if ($fd = fopen($filename, "r"))
   $ligne=fgets ($fd, 4096);
   $sql_update_database.=$ligne;
  
-  if(eregi(";",$ligne))
+  if(preg_match("/;/i",$ligne))
   {
-    $sql_update_database=eregi_replace(";","",$sql_update_database);
+    $sql_update_database=preg_replace ("/;/i","",$sql_update_database);
     if(sql_query($sql_update_database)) { $var['nb_table_ok']++; }   
     else { $var['nb_table_pbm']++; } 
     $sql_update_database="";  

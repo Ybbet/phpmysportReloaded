@@ -76,7 +76,7 @@ $i=-1;
 foreach($website_menu AS $value) {
 	if(!isset($value['target'])) $value['target']='';
 
-	if(!eregi("http",$value['url'])) {
+	if(!preg_match("/http/i",$value['url'])) {
 		$value['url']=convert_url($value['url']);
 	}
 	

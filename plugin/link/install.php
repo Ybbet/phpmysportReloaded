@@ -24,9 +24,9 @@ if(isset($_POST['install']) AND $_POST['install']==1)
    $ligne=fgets ($fd, 4096);
    $sql_install.=$ligne;
  
-   if(eregi(";",$ligne))
+   if(preg_match("/;/i",$ligne))
    {
-     $sql_install=eregi_replace(";","",$sql_install);
+     $sql_install=preg_replace ("/;/i","",$sql_install);
      if(sql_query($sql_install)) { $var['nb_table_ok']++; }   
      else { $var['nb_table_pbm']++; } 
      $sql_install="";  
@@ -51,8 +51,8 @@ if(isset($_POST['install']) AND $_POST['install']==1)
   $nb_ligne=sizeof($ligne);
   for($i=0;$i<$nb_ligne;$i++)
   {
-    if($install==0 AND eregi("plugin_install",$ligne[$i])) { $ligne[$i]=eregi_replace("0","1",$ligne[$i]);  $install=1; }
-	if($install==1 AND eregi("plugin_active",$ligne[$i])) { $ligne[$i]=eregi_replace("0","1",$ligne[$i]); }
+    if($install==0 AND preg_match("/plugin_install",$ligne[$i])) { $ligne[$i]=preg_replace ("/0/i","1/i",$ligne[$i]);  $install=1; }
+	if($install==1 AND preg_match("/plugin_active",$ligne[$i])) { $ligne[$i]=preg_replace ("/0/i","1/i",$ligne[$i]); }
   }
   $ligne=implode("",$ligne); 
  

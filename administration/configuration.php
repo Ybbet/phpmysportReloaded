@@ -256,9 +256,9 @@ if($page['show_form']) {
 	$dir = opendir(".");
 	
 	while ($f = readdir($dir)) { 
-	 if($f!="." AND $f!=".." AND eregi("lg_general_",$f))
+	 if($f!="." AND $f!=".." AND preg_match("/lg_general_/i",$f))
 	 {
-	  $tab_lang[]=eregi_replace("lg_general_|.php","",$f);
+	  $tab_lang[]=preg_replace ("/lg_general_|.php/i","",$f);
 	 }
 	}
 	closedir($dir); 

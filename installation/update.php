@@ -33,7 +33,7 @@ for($i=0; $i < $nb_update; $i++)
  if(VERSION_SITE > $version && VERSION_SITE > VERSION && VERSION <= $version) 
  {
   $page['update_list'][$j]['value']=$update_list[$i];
-  $page['update_list'][$j]['name']=eregi_replace("-"," => ",$update_list[$i]);
+  $page['update_list'][$j]['name']=preg_replace ("/-/i"," => ",$update_list[$i]);
   
   $page['update_list'][$j]['L_update']=$lang['installation']['update'];
   
