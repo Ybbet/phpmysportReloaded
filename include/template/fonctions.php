@@ -2,7 +2,7 @@
 /*
 * phpMySport : website for team sport clubs and leagues
 *
-* Copyright (C) 2006-2009 Jerome PLACE. All rights reserved.
+* Copyright (C) 2006-2017 Jerome PLACE. All rights reserved.
 *
 * Email           : djayp [at] users.sourceforge.net
 * Website         : http://phpmysport.sourceforge.net
@@ -21,7 +21,7 @@
 *
 */
 
-/* En récursif */
+/* En rï¿½cursif */
 function parse_template($tpl,$var)
 {
  if(!file_exists($tpl))
@@ -32,7 +32,7 @@ function parse_template($tpl,$var)
 		$tpl=$tpl_defaut;
 	}
 	else {
-		die("Le fichier \"".$tpl."\"n'existe pas - création du template impossible");
+		die("Le fichier \"".$tpl."\"n'existe pas - crï¿½ation du template impossible");
 	} 	
  }
  $ligne=file($tpl);
@@ -77,7 +77,7 @@ function parse_html($code,$var)
     $i++;
   }
 
-   // on arrive à la end de la boucle
+   // on arrive ï¿½ la end de la boucle
   if($boucle==true AND preg_match("<!-- END LOOP ".$name." -->",$code[$i]))
   {
     for($j="0";$j<$nb;$j++) // defini le number de bloc a afficher

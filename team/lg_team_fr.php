@@ -8,61 +8,61 @@
 #################################
 # divers
 $lang['team']['team']='Equipe';
-$lang['team']['team_list']='Listes des équipes';
-$lang['team']['add_team']='Ajouter une équipe';
-$lang['team']['edit_team']='Modifier une équipe'; // new 1.4
-$lang['team']['delete_team']='Supprimer une équipe'; // new 1.4
-$lang['team']['view_team']='Fiche d\'une équipe'; // new 1.4
-$lang['team']['choose_team']='Choisir une équipe';
+$lang['team']['team_list']='Listes des Ã©quipes';
+$lang['team']['add_team']='Ajouter une Ã©quipe';
+$lang['team']['edit_team']='Modifier une Ã©quipe'; // new 1.4
+$lang['team']['delete_team']='Supprimer une Ã©quipe'; // new 1.4
+$lang['team']['view_team']='Fiche d\'une Ã©quipe'; // new 1.4
+$lang['team']['choose_team']='Choisir une Ã©quipe';
 $lang['team']['sex']='Sexe';
 $lang['team']['mixte']='Equipe mixte';
-$lang['team']['composition_team']='Composition de l\'équipe';
-$lang['team']['details']='Détails';
+$lang['team']['composition_team']='Composition de l\'Ã©quipe';
+$lang['team']['details']='DÃ©tails';
 $lang['team']['view_match']='Voir les matchs';
 $lang['team']['view_stats']='Voir les statistiques';
 $lang['team']['club']='Club';
 $lang['team']['choose_club']='Choisir un club';
-$lang['team']['back_list']='Retour à la liste des équipes';
+$lang['team']['back_list']='Retour Ã  la liste des Ã©quipes';
 
-$lang['team']['number']='N°';
+$lang['team']['number']='NÂ°';
 $lang['team']['season']='Saison';
 $lang['team']['choose_season']='Choisir une saison';
-$lang['team']['coach']='Entraîneur';
+$lang['team']['coach']='EntraÃ®neur';
 $lang['team']['captain']='Capitaine';
 
 
 # formulaire
-$lang['team']['form_team_add']='Ajouter une équipe';
-$lang['team']['form_team_edit']='Modifier une équipe';
-$lang['team']['form_team_add_1']='Insertion réussie';
-$lang['team']['form_team_add_0']='Problème lors de l\'insertion';
-$lang['team']['form_team_edit_1']='Modification réussie';
-$lang['team']['form_team_edit_0']='Problème lors de la modification';
-$lang['team']['form_team_sup_1']='Suppression réussie';
+$lang['team']['form_team_add']='Ajouter une Ã©quipe';
+$lang['team']['form_team_edit']='Modifier une Ã©quipe';
+$lang['team']['form_team_add_1']='Insertion rÃ©ussie';
+$lang['team']['form_team_add_0']='ProblÃ¨me lors de l\'insertion';
+$lang['team']['form_team_edit_1']='Modification rÃ©ussie';
+$lang['team']['form_team_edit_0']='ProblÃ¨me lors de la modification';
+$lang['team']['form_team_sup_1']='Suppression rÃ©ussie';
 $lang['team']['form_team_sup_0']='Suppression impossible';
 
 # erreur
-$lang['team']['E_empty_team_name']='Veuillez choisir un nom d\'équipe';
+$lang['team']['E_empty_team_name']='Veuillez choisir un nom d\'Ã©quipe';
 $lang['team']['E_empty_club']='Veuillez choisir un club';
-$lang['team']['E_team_not_found']='Aucune équipe n\'a été trouvée';
-$lang['team']['E_exist_team']='Cette équipe existe déjà';
+$lang['team']['E_team_not_found']='Aucune Ã©quipe n\'a Ã©tÃ© trouvÃ©e';
+$lang['team']['E_exist_team']='Cette Ã©quipe existe dÃ©jÃ ';
 
 # team_coach
-$lang['team']['team_coach_list']='Les entraîneurs';
-$lang['team']['E_empty_team_coach']='Veuillez choisir un entraîneur';
-$lang['team']['E_team_coach_not_found']='Aucun entraîneur n\'a été trouvé';
-$lang['team']['team_coach']='Entraîneur(s)';
-$lang['team']['coach']='Entraîneur';
-$lang['team']['choose_coach']='Choisir un entraîneur';
-$lang['team']['add_coach']='Ajouter un entraîneur';
-$lang['team']['show_view']='Détails';
+$lang['team']['team_coach_list']='Les entraÃ®neurs';
+$lang['team']['E_empty_team_coach']='Veuillez choisir un entraÃ®neur';
+$lang['team']['E_team_coach_not_found']='Aucun entraÃ®neur n\'a Ã©tÃ© trouvÃ©';
+$lang['team']['team_coach']='EntraÃ®neur(s)';
+$lang['team']['coach']='EntraÃ®neur';
+$lang['team']['choose_coach']='Choisir un entraÃ®neur';
+$lang['team']['add_coach']='Ajouter un entraÃ®neur';
+$lang['team']['show_view']='DÃ©tails';
 
 # team_player
 $lang['team']['team_player_list']='Les joueurs';
-$lang['team']['E_team_player_not_found']='Aucun joueur n\'a été trouvé';
+$lang['team']['E_team_player_not_found']='Aucun joueur n\'a Ã©tÃ© trouvÃ©';
 $lang['team']['E_empty_team_player']='Veuillez choisir un joueur et son poste';
 $lang['team']['team_player']='Joueur(s)';
-$lang['team']['number']='N°';
+$lang['team']['number']='NÂ°';
 $lang['team']['captain']='Capitaine';
 $lang['team']['player']='Joueur';
 $lang['team']['choose_player']='Choisir un joueur';
@@ -78,23 +78,23 @@ $lang['team']['choose_image']='Choisir une image';
 # team_name
 #################################
 # divers
-$lang['team']['team_name']='Nom de l\'équipe';
-$lang['team']['team_name_list']='Nom des équipes du club';
-$lang['team']['add_team_name']='Ajouter un nom d\'équipe';
-$lang['team']['choose_team_name']='Choisir un nom d\'équipe';
+$lang['team']['team_name']='Nom de l\'Ã©quipe';
+$lang['team']['team_name_list']='Nom des Ã©quipes du club';
+$lang['team']['add_team_name']='Ajouter un nom d\'Ã©quipe';
+$lang['team']['choose_team_name']='Choisir un nom d\'Ã©quipe';
 
 # formulaire
-$lang['team']['form_team_name']='Nom des équipes du club';
-$lang['team']['form_team_name_add_1']='Insertion réussie';
-$lang['team']['form_team_name_add_0']='Problème lors de l\'insertion';
-$lang['team']['form_team_name_edit_1']='Modification réussie';
-$lang['team']['form_team_name_edit_0']='Problème lors de la modification';
-$lang['team']['form_team_name_sup_1']='Suppression réussie';
+$lang['team']['form_team_name']='Nom des Ã©quipes du club';
+$lang['team']['form_team_name_add_1']='Insertion rÃ©ussie';
+$lang['team']['form_team_name_add_0']='ProblÃ¨me lors de l\'insertion';
+$lang['team']['form_team_name_edit_1']='Modification rÃ©ussie';
+$lang['team']['form_team_name_edit_0']='ProblÃ¨me lors de la modification';
+$lang['team']['form_team_name_sup_1']='Suppression rÃ©ussie';
 $lang['team']['form_team_name_sup_0']='Suppression impossible';
 
 # erreur
-$lang['team']['E_empty_name_team_name']='Veuillez saisir un nom d\'équipe';
-$lang['team']['E_exist_team_name']='Ce nom d\'équipe est déjà présent';
+$lang['team']['E_empty_name_team_name']='Veuillez saisir un nom d\'Ã©quipe';
+$lang['team']['E_exist_team_name']='Ce nom d\'Ã©quipe est dÃ©jÃ  prÃ©sent';
 
 #################################
 # position
@@ -107,16 +107,16 @@ $lang['team']['choose_position']='Choisir un poste';
 
 # formulaire
 $lang['team']['form_position']='Poste des joueurs sur le terrain';
-$lang['team']['form_position_add_1']='Insertion réussie';
-$lang['team']['form_position_add_0']='Problème lors de l\'insertion';
-$lang['team']['form_position_edit_1']='Modification réussie';
-$lang['team']['form_position_edit_0']='Problème lors de la modification';
-$lang['team']['form_position_sup_1']='Suppression réussie';
+$lang['team']['form_position_add_1']='Insertion rÃ©ussie';
+$lang['team']['form_position_add_0']='ProblÃ¨me lors de l\'insertion';
+$lang['team']['form_position_edit_1']='Modification rÃ©ussie';
+$lang['team']['form_position_edit_0']='ProblÃ¨me lors de la modification';
+$lang['team']['form_position_sup_1']='Suppression rÃ©ussie';
 $lang['team']['form_position_sup_0']='Suppression impossible';
 
 # erreur
 $lang['team']['E_empty_name_position']='Veuillez saisir un poste';
-$lang['team']['E_exist_position']='Ce poste est déjà présent';
+$lang['team']['E_exist_position']='Ce poste est dÃ©jÃ  prÃ©sent';
 $lang['team']['E_exist_position_team']='Un joueur ayant ce poste existe';
 
 #################################
@@ -135,9 +135,7 @@ $lang['team']['yes']='Oui';
 $lang['team']['no']='Non';
 
 # page
-$lang['team']['first_page']='Première page';
-$lang['team']['previous_page']='Précédente';
+$lang['team']['first_page']='PremiÃ¨re page';
+$lang['team']['previous_page']='PrÃ©cÃ©dente';
 $lang['team']['next_page']='Suivante';
-$lang['team']['last_page']='Dernière page';
-
-?>
+$lang['team']['last_page']='DerniÃ¨re page';

@@ -14,9 +14,9 @@ $lang['information']['edit_page']='Modifier une page'; // new 1.4
 $lang['information']['delete_page']='Supprimer une page'; // new 1.4
 $lang['information']['view_page']='Voir une page'; // new 1.4
 $lang['information']['title']='Titre';
-$lang['information']['summary']='RÈsumÈ';
+$lang['information']['summary']='R√©sum√©';
 $lang['information']['text']='Texte';
-$lang['information']['keyword']='Mots clÈs';
+$lang['information']['keyword']='Mots cl√©s';
 $lang['information']['image']='Image';
 $lang['information']['lang']='Langue';
 $lang['information']['idurl']='ID url';
@@ -25,12 +25,12 @@ $lang['information']['author']='Ecrit par';
 $lang['information']['page_parent']='Page parent';
 $lang['information']['status']='Statut';
 $lang['information']['size']='Taille';
-$lang['information']['details']='DÈtails';
-$lang['information']['date_edit']='DerniËre modification';
+$lang['information']['details']='D√©tails';
+$lang['information']['date_edit']='Derni√®re modification';
 $lang['information']['format_date']='d-m-Y';
-$lang['information']['private']='En cours de rÈdaction';
-$lang['information']['public']='PubliÈ';
-$lang['information']['back_list']='Retour ‡ la liste des pages';
+$lang['information']['private']='En cours de r√©daction';
+$lang['information']['public']='Publi√©';
+$lang['information']['back_list']='Retour √† la liste des pages';
 
 $lang['information']['choose_page_parent']='Choisir la page originale';
 $lang['information']['choose_image']='Choisir une image';
@@ -42,11 +42,11 @@ $lang['information']['information_home']='Zoom sur';
 # formulaire
 $lang['information']['form_page_add']='Ajouter une page';
 $lang['information']['form_page_edit']='Modifier une page';
-$lang['information']['form_page_add_1']='Insertion rÈussie.';
-$lang['information']['form_page_add_0']='ProblËme lors de l\'insertion';
-$lang['information']['form_page_edit_1']='Modification rÈussie';
-$lang['information']['form_page_edit_0']='ProblËme lors de la modification';
-$lang['information']['form_page_sup_1']='Suppression rÈussie';
+$lang['information']['form_page_add_1']='Insertion r√©ussie.';
+$lang['information']['form_page_add_0']='Probl√®me lors de l\'insertion';
+$lang['information']['form_page_edit_1']='Modification r√©ussie';
+$lang['information']['form_page_edit_0']='Probl√®me lors de la modification';
+$lang['information']['form_page_sup_1']='Suppression r√©ussie';
 $lang['information']['form_page_sup_0']='Suppression impossible';
 
 # erreur
@@ -55,8 +55,8 @@ $lang['information']['E_empty_title']='Veuillez saisir un titre';
 $lang['information']['E_empty_status']='Veuillez choisir un statut';
 $lang['information']['E_empty_summary']='Veuillez saisir la description de la page';
 $lang['information']['E_empty_text']='Veuillez saisir le texte de la page';
-$lang['information']['E_exist_page']='Cette page est dÈj‡ prÈsente';
-$lang['information']['E_page_not_found']='Aucune page n\'a ÈtÈ trouvÈe';
+$lang['information']['E_exist_page']='Cette page est d√©j√† pr√©sente';
+$lang['information']['E_page_not_found']='Aucune page n\'a √©t√© trouv√©e';
 
 #################################
 # commun

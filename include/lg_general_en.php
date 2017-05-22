@@ -100,7 +100,7 @@ $lang['general']['configuration']='Configuration';
 # divers
 $lang['general']['submit']='Submit';
 $lang['general']['version']='version';
-$lang['general']['realisation']='Realisation phpMySport - Copyright &copy; 2006-2009';
+$lang['general']['realisation']='Realisation phpMySport - Copyright &copy; 2006-2017';
 $lang['general']['acces_denied']='Access denied';
 $lang['general']['close_popup']='Close the window';
 $lang['general']['welcome']='Welcome';

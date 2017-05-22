@@ -7,11 +7,11 @@
 # install
 ##############################
 $lang['link']['installation']="Installation du plugin de liens web";
-$lang['link']['install_plugin']="Vous êtes sur le point d'installer un plugin qui propose des liens web.
+$lang['link']['install_plugin']="Vous Ãªtes sur le point d'installer un plugin qui propose des liens web.
 Etes-vous sur de vouloir continuer ?";
 
-$lang['link']['E_install_plugin']="Problème lors de l'installation du plugin";
-$lang['link']['install_plugin_ok']="Le plugin a été installé correctement";
+$lang['link']['E_install_plugin']="ProblÃ¨me lors de l'installation du plugin";
+$lang['link']['install_plugin_ok']="Le plugin a Ã©tÃ© installÃ© correctement";
 
 
 #################################
@@ -27,26 +27,26 @@ $lang['link']['delete_link']="Supprimer un site"; // new 1.4
 $lang['link']['name']="Titre du site";
 $lang['link']['url']="URL du site";
 $lang['link']['description']="Description";
-$lang['link']['details']="Détails";
-$lang['link']['show_view']="Détails";
-$lang['link']['back_list']="Retour à la liste des liens";
+$lang['link']['details']="DÃ©tails";
+$lang['link']['show_view']="DÃ©tails";
+$lang['link']['back_list']="Retour Ã  la liste des liens";
 
 # formulaire
 $lang['link']['form_link_add']="Ajouter un lien";
 $lang['link']['form_link_edit']="Modifier un lien";
-$lang['link']['form_link_add_1']="Insertion réussie";
-$lang['link']['form_link_add_0']="Problème lors de l'insertion";
-$lang['link']['form_link_edit_1']="Modification réussie";
-$lang['link']['form_link_edit_0']="Problème lors de la modification";
-$lang['link']['form_link_sup_1']="Suppression réussie";
+$lang['link']['form_link_add_1']="Insertion rÃ©ussie";
+$lang['link']['form_link_add_0']="ProblÃ¨me lors de l'insertion";
+$lang['link']['form_link_edit_1']="Modification rÃ©ussie";
+$lang['link']['form_link_edit_0']="ProblÃ¨me lors de la modification";
+$lang['link']['form_link_sup_1']="Suppression rÃ©ussie";
 $lang['link']['form_link_sup_0']="Suppression impossible";
 
 # erreur 
 $lang['link']['E_empty_name_link']="Veuillez saisir un titre de site";
 $lang['link']['E_empty_url']="Veuillez saisir une url";
 $lang['link']['E_invalid_url']="L'url saisie est invalide";
-$lang['link']['E_link_not_found']="Aucun lien n'a été trouvé";
-$lang['link']['E_exist_link']="Ce lien existe déjà";
+$lang['link']['E_link_not_found']="Aucun lien n'a Ã©tÃ© trouvÃ©";
+$lang['link']['E_exist_link']="Ce lien existe dÃ©jÃ ";
 
 
 #################################
@@ -60,9 +60,9 @@ $lang['link']['delete']="Supprimer";
 $lang['link']['order_by']="Trier par";
 
 # page
-$lang['link']['first_page']="Première page";
-$lang['link']['previous_page']="Précédente";
+$lang['link']['first_page']="PremiÃ¨re page";
+$lang['link']['previous_page']="PrÃ©cÃ©dente";
 $lang['link']['next_page']="Suivante";
-$lang['link']['last_page']="Dernière page";
+$lang['link']['last_page']="DerniÃ¨re page";
 
 ?>

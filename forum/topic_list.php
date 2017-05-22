@@ -153,7 +153,7 @@ if(!isset($var['limit']))
  /***************/
  /* PAGINATION */
  /**************/
- if(!isset($_GET['v2']) OR $_GET['v2']=="" OR !ereg("page",$_GET['v2'])) { $page_num="1"; }
+ if(!isset($_GET['v2']) OR $_GET['v2']=="" OR !preg_match("/page/",$_GET['v2'])) { $page_num="1"; }
  else { $page_num=explode("_",$_GET['v2']); $page_num=$page_num['1']; }
 
  # number of the current page

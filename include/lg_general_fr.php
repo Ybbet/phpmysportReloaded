@@ -9,21 +9,21 @@
 # divers
 $lang['general']['home']='Accueil';
 $lang['general']['news']='News';
-$lang['general']['information']='Présentation';
+$lang['general']['information']='PrÃ©sentation';
 $lang['general']['member']='Membre';
 $lang['general']['member_list']='Les membres';
 $lang['general']['player_list']='Les joueurs';
 $lang['general']['manager_list']='Les dirigeants';
-$lang['general']['coach_list']='Les entraîneurs';
+$lang['general']['coach_list']='Les entraÃ®neurs';
 $lang['general']['referee_list']='Les arbitres';
 $lang['general']['match']='Matchs';
 $lang['general']['match_list']='Les matchs';
 $lang['general']['standings']='Classement/stats';
 $lang['general']['stats_player']='Stats des joueurs';
-$lang['general']['competition']='Compétition';
-$lang['general']['competition_list']='Compétitions';
+$lang['general']['competition']='CompÃ©tition';
+$lang['general']['competition_list']='CompÃ©titions';
 $lang['general']['team']='Equipe';
-$lang['general']['team_list']='Les équipes';
+$lang['general']['team_list']='Les Ã©quipes';
 $lang['general']['statistics']='Statistiques';
 $lang['general']['search_member']='Recherche';
 $lang['general']['club']='Club';
@@ -65,27 +65,27 @@ $lang['general']['connection']='Connexion';
 $lang['general']['auto_connection']='auto-connexion';
 $lang['general']['E_empty_login']='Veuillez saisir un login';
 $lang['general']['E_empty_pass']='Veuillez saisir un mot de passe';
-$lang['general']['deconnection']='Déconnexion';
+$lang['general']['deconnection']='DÃ©connexion';
 $lang['general']['sign_up']='S\'inscrire';
-$lang['general']['forgot_pass']='Mot de passe oublié ?';
+$lang['general']['forgot_pass']='Mot de passe oubliÃ© ?';
 $lang['general']['profile']='Mon profil';
 $lang['general']['hello']='Bonjour';
 $lang['general']['contact']='Contact';
-$lang['general']['path']='Vous êtes ici';
+$lang['general']['path']='Vous Ãªtes ici';
 $lang['general']['form_connection']='Mon compte';
-$lang['general']['acces_reserve']='Accès réservé aux membres';
+$lang['general']['acces_reserve']='AccÃ¨s rÃ©servÃ© aux membres';
 $lang['general']['acces_reserve_admin']='Cette page est indisponible';
-$lang['general']['acces_reserve_member']='<p>Cette page est réservée aux membres.</p>
-Si vous êtes déjà membre, il vous suffit de vous connecter avec votre pseudo et votre mot de passe grâce au formulaire de connexion ci contre.<br>
-Sinon, il vous suffit de vous inscrire grâce au lien présent sur le site.';
+$lang['general']['acces_reserve_member']='<p>Cette page est rÃ©servÃ©e aux membres.</p>
+Si vous Ãªtes dÃ©jÃ  membre, il vous suffit de vous connecter avec votre pseudo et votre mot de passe grÃ¢ce au formulaire de connexion ci contre.<br>
+Sinon, il vous suffit de vous inscrire grÃ¢ce au lien prÃ©sent sur le site.';
 
-$lang['general']['pbm_connection']='Problème de connexion';
-$lang['general']['connection_pbm']='La connexion a échouée.<br>
+$lang['general']['pbm_connection']='ProblÃ¨me de connexion';
+$lang['general']['connection_pbm']='La connexion a Ã©chouÃ©e.<br>
 Voici les erreurs possibles :<br>
  - vous avez fait une faute dans votre login ou mot de passe, dans ce cas recommencez la connexion,<br>
- - vous n\'êtes pas encore inscrit, dans ce cas, veuillez contacter l\'administrateur du site,<br>
- - vous avez perdu votre mot de passe, obtenez un nouveau mot de passe grâce au lien ci-contre. ';
-$lang['general']['account_blocked']='Votre compte a été bloqué et la connection vous est refusée. Veuillez contacter le webmaster du site.'; 
+ - vous n\'Ãªtes pas encore inscrit, dans ce cas, veuillez contacter l\'administrateur du site,<br>
+ - vous avez perdu votre mot de passe, obtenez un nouveau mot de passe grÃ¢ce au lien ci-contre. ';
+$lang['general']['account_blocked']='Votre compte a Ã©tÃ© bloquÃ© et la connection vous est refusÃ©e. Veuillez contacter le webmaster du site.'; 
 
 #################################
 # administration
@@ -103,21 +103,21 @@ $lang['general']['configuration']='Configuration';
 # divers
 $lang['general']['submit']='Valider';
 $lang['general']['version']='version';
-$lang['general']['realisation']='R&eacute;alisation phpMySport - Copyright &copy; 2006-2009';
-$lang['general']['acces_denied']='Accès non autorisé';
-$lang['general']['close_popup']='Fermer la fenêtre';
+$lang['general']['realisation']='R&eacute;alisation phpMySport - Copyright &copy; 2006-2017';
+$lang['general']['acces_denied']='AccÃ¨s non autorisÃ©';
+$lang['general']['close_popup']='Fermer la fenÃªtre';
 $lang['general']['welcome']='Bienvenue';
 $lang['general']['confirmation_suppression']='Etes vous sur de vouloir continuer ?';
 $lang['general']['E_erreur']='Attention il y a des erreurs';
 $lang['general']['field_required']='Champ obligatoire'; 
 $lang['general']['site_construction']='Site en construction';
-$lang['general']['site_construction_text']='Le site est en cours de construction. Nous vous invitons à revenir prochainement pour découvrir la nouvelle version. Merci de votre compréhension.';
+$lang['general']['site_construction_text']='Le site est en cours de construction. Nous vous invitons Ã  revenir prochainement pour dÃ©couvrir la nouvelle version. Merci de votre comprÃ©hension.';
 
 $lang['general']['minute']='minute(s)';
 $lang['general']['hour']='heure(s)';
 $lang['general']['day']='jour(s)';
 $lang['general']['month']='mois';
-$lang['general']['year']='année(s)';
+$lang['general']['year']='annÃ©e(s)';
 
 $lang['general']['yes']='Oui';
 $lang['general']['no']='Non';
@@ -128,7 +128,4 @@ $lang['general']['setlocale_parameters']=array('fr','fr_fr','fr_FR','fr_fr@euro'
 
 # meta
 $lang['general']['meta_description']='description du club de football';
-$lang['general']['meta_keyword']='mot clé';
-
-
-?>
+$lang['general']['meta_keyword']='mot clÃ©';

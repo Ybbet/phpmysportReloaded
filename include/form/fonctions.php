@@ -2,7 +2,7 @@
 /*
 * phpMySport : website for team sport clubs and leagues
 *
-* Copyright (C) 2006-2009 Jerome PLACE. All rights reserved.
+* Copyright (C) 2006-2017 Jerome PLACE. All rights reserved.
 *
 * Email           : djayp [at] users.sourceforge.net
 * Website         : http://phpmysport.sourceforge.net

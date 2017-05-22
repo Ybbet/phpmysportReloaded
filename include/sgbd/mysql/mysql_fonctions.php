@@ -2,7 +2,7 @@
 /*
 * phpMySport : website for team sport clubs and leagues
 *
-* Copyright (C) 2006-2009 Jerome PLACE. All rights reserved.
+* Copyright (C) 2006-2017 Jerome PLACE. All rights reserved.
 *
 * Email           : djayp [at] users.sourceforge.net
 * Website         : http://phpmysport.sourceforge.net
@@ -32,14 +32,14 @@ function sql_replace($sql,$var)
 /* connection to the server and selection of the database */
 function sql_connect()
 {
- $id_connection_bd = @mysql_connect(SGBD_HOST, SGBD_USER, SGBD_PWD);
- if(mysql_select_db(SGBD_NAME, $id_connection_bd))
+ $id_connection_bd = @mysqli_connect(SGBD_HOST, SGBD_USER, SGBD_PWD);
+ if(mysqli_select_db(SGBD_NAME, $id_connection_bd))
  {
   return $id_connection_bd;
  }
  else
  {
-  @mysql_close($bd);
+  @mysqli_close($bd);
   return false;
  }
 }
@@ -51,9 +51,9 @@ function sql_close($id_connection_bd, $resultat = false)
  {
   if(isset($resultat) AND $resultat != false)
   {
-   @mysql_free_result($resultat);
+   @mysqli_free_result($resultat);
   }
-  return @mysql_close($id_connection_bd);
+  return @mysqli_close($id_connection_bd);
  }
  else
  {
@@ -66,7 +66,7 @@ function sql_query($sql, $resultat = false)
 {
  if($sql != "")
  {
-  return mysql_query($sql);
+  return mysqli_query($sql);
  }
  else
  {
@@ -79,7 +79,7 @@ function sql_num_rows($resultat)
 {
  if($resultat != "")
  {
-  return @mysql_num_rows($resultat);
+  return @mysqli_num_rows($resultat);
  }
  else
  {
@@ -92,7 +92,7 @@ function sql_result($resultat)
 {
  if($resultat != "")
  {
-  return mysql_result($resultat);
+  return mysqli_result($resultat);
  }
  else
  {
@@ -106,7 +106,7 @@ function sql_fetch_array($resultat)
 {
  if($resultat != "")
  {
-  return @mysql_fetch_array($resultat);
+  return @mysqli_fetch_array($resultat);
  }
  else
  {
@@ -117,7 +117,7 @@ function sql_fetch_array($resultat)
 /* return the ID of th last inserted data */
 function sql_insert_id($sgbd)
 {
- return mysql_insert_id($sgbd);
+ return mysqli_insert_id($sgbd);
 }
 
 /*  */
@@ -125,7 +125,7 @@ function sql_free_result($resultat)
 {
  if($resultat != "")
  {
-  return @mysql_free_result($resultat);
+  return @mysqli_free_result($resultat);
  }
  else
  {
@@ -136,7 +136,7 @@ function sql_free_result($resultat)
 
 function sql_error()
 {
- return mysql_errno()." ".mysql_error();
+ return mysqli_errno()." ".mysql_error();
 }
 
 ?>
